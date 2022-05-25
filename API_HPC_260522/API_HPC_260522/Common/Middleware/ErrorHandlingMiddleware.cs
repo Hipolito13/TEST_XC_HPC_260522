@@ -1,5 +1,8 @@
 ﻿using API_HPC_260522.Common.Utils;
+using API_HPC_260522.Models;
+using API_HPC_260522.Models.Requests;
 using API_HPC_260522.Models.Responses;
+using API_HPC_260522.Repositories;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -34,14 +37,10 @@ namespace API_HPC_260522.Common.Middleware
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-            //var message = exception switch
-            //{
-            //    AccessViolationException => "Access violation error from the custom middleware",
-            //    _ => "Internal Server Error from the custom middleware."
-            //};
-            await context.Response.WriteAsync(new BaseResponse { 
-               IsValid = false,
-               Errors = new List<Error>
+            await context.Response.WriteAsync(new BaseResponse
+            {
+                IsValid = false,
+                Errors = new List<Error>
                {
                    new Error
                    {

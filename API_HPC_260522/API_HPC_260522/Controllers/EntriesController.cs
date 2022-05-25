@@ -14,6 +14,7 @@ namespace API_HPC_260522.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authentication]
+    [ServiceFilter(typeof(LoggerFilter))]
     public class EntriesController : ControllerBase
     {
 

@@ -32,3 +32,17 @@ C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_26052
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.File.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

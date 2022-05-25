@@ -1,5 +1,7 @@
-﻿using API_HPC_260522.Common.Middleware;
+﻿using API_HPC_260522.Common.Filters;
+using API_HPC_260522.Common.Middleware;
 using API_HPC_260522.Mappers;
+using API_HPC_260522.Models;
 using API_HPC_260522.Repositories;
 using API_HPC_260522.Services;
 using AutoMapper;
@@ -9,6 +11,8 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,6 +25,16 @@ namespace API_HPC_260522.Common.Extensions
         {
             service.AddRepositories();
             service.AddServices();
+            service.AddScoped<CorrelationContext>();
+            service.AddScoped<LoggerFilter>();
+        }
+
+        public static void AddSqlServer(this IServiceCollection services, string connectionString)
+        {
+            services.AddScoped<IDbConnection>(provider =>
+            {
+                return new SqlConnection(connectionString);
+            });
         }
 
         public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)

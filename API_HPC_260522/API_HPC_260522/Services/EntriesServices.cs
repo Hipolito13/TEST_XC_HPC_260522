@@ -4,6 +4,7 @@ using API_HPC_260522.Models.Responses;
 using API_HPC_260522.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,13 @@ namespace API_HPC_260522.Services
 {
     public class EntriesServices : BaseService, IEntriesServices
     {
+        private readonly ILogger<EntriesServices> _logger;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public EntriesServices(IUnitOfWork unitOfWork, IMapper mapper)
+        public EntriesServices(ILogger<EntriesServices> logger, IUnitOfWork unitOfWork, IMapper mapper)
         {
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
@@ -27,7 +30,6 @@ namespace API_HPC_260522.Services
         {
             try
             {
-                throw new Exception("Error testing developer");
                 DtoCategories categories = GetCategories();
                 if (categories.Count == 0)
                 {
@@ -45,6 +47,7 @@ namespace API_HPC_260522.Services
             }
             catch(Exception e)
             {
+                _logger.LogError(e, "Error in NetworkRequestSampleAsync, error message: {0}, Stack Trace: {1}", e.Message, e.StackTrace);
                 throw e;
             }
         }
@@ -76,6 +79,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Error in NetworkRequestSampleAsync, error message: {0}, Stack Trace: {1}", e.Message, e.StackTrace);
                 throw e;
             }
         }
@@ -98,6 +102,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Error in NetworkRequestSampleAsync, error message: {0}, Stack Trace: {1}", e.Message, e.StackTrace);
                 throw e;
             }
         }
@@ -144,6 +149,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Error in NetworkRequestSampleAsync, error message: {0}, Stack Trace: {1}", e.Message, e.StackTrace);
                 throw e;
             }
         }
@@ -163,6 +169,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Error in NetworkRequestSampleAsync, error message: {0}, Stack Trace: {1}", e.Message, e.StackTrace);
                 throw e;
             }
         }
