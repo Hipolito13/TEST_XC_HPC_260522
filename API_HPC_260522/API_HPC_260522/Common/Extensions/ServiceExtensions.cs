@@ -1,10 +1,12 @@
-﻿using API_HPC_260522.Mappers;
+﻿using API_HPC_260522.Common.Middleware;
+using API_HPC_260522.Mappers;
 using API_HPC_260522.Repositories;
 using API_HPC_260522.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,11 @@ namespace API_HPC_260522.Common.Extensions
         {
             service.AddRepositories();
             service.AddServices();
+        }
+
+        public static void UseErrorHandlingMiddleware(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<ErrorHandlingMiddleware>();
         }
 
         public static void AddAutoMapper(this IServiceCollection service)
@@ -37,6 +44,7 @@ namespace API_HPC_260522.Common.Extensions
         {
             services.AddSwaggerGen(c =>
             {
+                SwaggerSecurity(c);
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Entries  API",
@@ -57,6 +65,35 @@ namespace API_HPC_260522.Common.Extensions
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("v1/swagger.json", "Entries API V1");
+            });
+        }
+
+        private static void SwaggerSecurity(SwaggerGenOptions options)
+        {
+            options.AddSecurityDefinition("Api-Key", new OpenApiSecurityScheme
+            {
+                Description = "Api key needed to access the endpoints. X-Api-Key: My_API_Key",
+                In = ParameterLocation.Header,
+                Name = "Api-Key",
+                Type = SecuritySchemeType.ApiKey
+            });
+
+            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+               {
+                  new OpenApiSecurityScheme
+                  {
+                     Name = "Api-Key",
+                     Type = SecuritySchemeType.ApiKey,
+                     In = ParameterLocation.Header,
+                     Reference = new OpenApiReference
+                     {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Api-Key"
+                     },
+                },
+                  new string[] {}
+               }
             });
         }
         #endregion

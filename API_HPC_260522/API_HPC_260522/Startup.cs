@@ -45,7 +45,7 @@ namespace API_HPC_260522
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseErrorHandlingMiddleware();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

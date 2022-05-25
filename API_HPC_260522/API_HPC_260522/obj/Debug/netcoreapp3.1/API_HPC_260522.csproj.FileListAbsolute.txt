@@ -29,3 +29,6 @@ C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_26052
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Flurl.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Flurl.Http.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\System.Text.Json.dll

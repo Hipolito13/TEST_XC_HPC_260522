@@ -1,4 +1,5 @@
-﻿using API_HPC_260522.Models.Requests;
+﻿using API_HPC_260522.Common.Filters;
+using API_HPC_260522.Models.Requests;
 using API_HPC_260522.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ namespace API_HPC_260522.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authentication]
     public class EntriesController : ControllerBase
     {
 

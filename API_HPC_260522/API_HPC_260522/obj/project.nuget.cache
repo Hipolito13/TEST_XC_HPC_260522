@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pKaOLbCz4DgEEZp9Y5VAUw/i+9rUkcf4rlVPuYUm9TtVL06yeI2yF+cXrZsNoYbkzilRiBX1lqc2eV7ixKeEMA==",
+  "dgSpecHash": "DjjkRP7k+gv07qoOs8tXgKlEvXBxmNCbfiB1ctyJFRP/tCltr8oStSTZdj/MhzvTutQnTyF2J2nLF3NSiEWePA==",
   "success": true,
   "projectFilePath": "C:\\Users\\hipol\\proyectos\\Pruebas\\TEST_XC_HPC_260522\\API_HPC_260522\\API_HPC_260522\\API_HPC_260522.csproj",
   "expectedPackageFiles": [
@@ -16,8 +16,10 @@
     "C:\\Users\\hipol\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
     "C:\\Users\\hipol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
     "C:\\Users\\hipol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
-    "C:\\Users\\hipol\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\hipol\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    "C:\\Users\\hipol\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\hipol\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\hipol\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\hipol\\.nuget\\packages\\system.text.json\\6.0.4\\system.text.json.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }

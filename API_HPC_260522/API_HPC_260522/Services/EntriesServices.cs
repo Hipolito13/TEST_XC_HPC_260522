@@ -27,6 +27,7 @@ namespace API_HPC_260522.Services
         {
             try
             {
+                throw new Exception("Error testing developer");
                 DtoCategories categories = GetCategories();
                 if (categories.Count == 0)
                 {
@@ -44,7 +45,7 @@ namespace API_HPC_260522.Services
             }
             catch(Exception e)
             {
-                return OnError<CategoriesResponse>(new CategoriesResponse { IsValid = false, Errors = GetErrors(e.Message, HttpStatusCode.NotFound) }, HttpStatusCode.NotFound);
+                throw e;
             }
         }
 
@@ -75,11 +76,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
-                return OnError<EntriesResponse>(new EntriesResponse
-                {
-                    IsValid = false,
-                    Errors = GetErrors(e.Message, HttpStatusCode.InternalServerError)
-                }, HttpStatusCode.InternalServerError);
+                throw e;
             }
         }
 
@@ -101,7 +98,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
-                return OnError<BaseResponse>(new BaseResponse { IsValid = false, Errors = GetErrors(e.Message, HttpStatusCode.NotFound) }, HttpStatusCode.NotFound);
+                throw e;
             }
         }
 
@@ -147,7 +144,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
-                return OnError<EntriesResponse>(new EntriesResponse { IsValid = false, Errors = GetErrors(e.Message, HttpStatusCode.InternalServerError) }, HttpStatusCode.InternalServerError);
+                throw e;
             }
         }
 
@@ -166,11 +163,7 @@ namespace API_HPC_260522.Services
             }
             catch (Exception e)
             {
-                return OnError<EntriesResponse>(new EntriesResponse
-                {
-                    IsValid = false,
-                    Errors = GetErrors(e.Message, HttpStatusCode.InternalServerError)
-                }, HttpStatusCode.InternalServerError);
+                throw e;
             }
         }
     }
