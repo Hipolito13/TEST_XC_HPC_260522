@@ -48,6 +48,14 @@
               "target": "Package",
               "version": "[11.0.1, )"
             },
+            "Flurl": {
+              "target": "Package",
+              "version": "[3.0.6, )"
+            },
+            "Flurl.Http": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.1, )"

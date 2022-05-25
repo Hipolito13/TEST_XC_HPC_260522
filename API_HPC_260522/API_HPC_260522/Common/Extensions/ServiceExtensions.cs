@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using API_HPC_260522.Repositories;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -66,7 +67,7 @@ namespace API_HPC_260522.Common.Extensions
 
         private static void AddRepositories(this IServiceCollection service)
         {
-            //service.AddScoped<IUnitOfWork, UnitOfWork>();
+            service.AddScoped<IUnitOfWork, UnitOfWork>();
         }
         #endregion
     }
