@@ -26,3 +26,6 @@ C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_26052
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.csproj.CopyComplete
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Flurl.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Flurl.Http.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

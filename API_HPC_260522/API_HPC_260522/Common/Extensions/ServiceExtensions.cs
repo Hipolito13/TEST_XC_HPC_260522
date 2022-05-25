@@ -1,5 +1,6 @@
 ﻿using API_HPC_260522.Mappers;
 using API_HPC_260522.Repositories;
+using API_HPC_260522.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -63,7 +64,7 @@ namespace API_HPC_260522.Common.Extensions
         #region Privates Methods
         private static void AddServices(this IServiceCollection service)
         {
-            //service.AddScoped<IEntriesServices, EntriesServices>();
+            service.AddScoped<IEntriesServices, EntriesServices>();
         }
 
         private static void AddRepositories(this IServiceCollection service)
