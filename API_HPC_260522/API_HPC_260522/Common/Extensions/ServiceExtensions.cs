@@ -1,4 +1,5 @@
-﻿using API_HPC_260522.Repositories;
+﻿using API_HPC_260522.Mappers;
+using API_HPC_260522.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,7 +24,7 @@ namespace API_HPC_260522.Common.Extensions
         {
             var mapperConfig = new MapperConfiguration(MC =>
             {
-                //MC.AddProfile<EntryAutoMapping>();
+                MC.AddProfile<EntryAutoMapping>();
             });
             IMapper mapper = mapperConfig.CreateMapper();
             service.AddSingleton(mapper);
