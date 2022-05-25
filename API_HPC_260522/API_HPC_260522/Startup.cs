@@ -1,3 +1,4 @@
+using API_HPC_260522.Common.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +27,9 @@ namespace API_HPC_260522
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerApplication();
+            services.AddApplication();
+            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +41,7 @@ namespace API_HPC_260522
             }
 
             app.UseHttpsRedirection();
-
+            app.AddSwaggerApplication();
             app.UseRouting();
 
             app.UseAuthorization();

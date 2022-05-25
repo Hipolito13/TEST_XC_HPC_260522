@@ -19,3 +19,10 @@ C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_26052
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.dll
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.pdb
 C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.genruntimeconfig.cache
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hipol\proyectos\Pruebas\TEST_XC_HPC_260522\API_HPC_260522\API_HPC_260522\obj\Debug\netcoreapp3.1\API_HPC_260522.csproj.CopyComplete
