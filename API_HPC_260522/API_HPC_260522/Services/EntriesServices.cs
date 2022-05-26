@@ -123,7 +123,7 @@ namespace API_HPC_260522.Services
                     return OnError<EntriesResponse>(new EntriesResponse { IsValid = false, Errors = GetErrors($"The {CategoryName} is not exist", HttpStatusCode.NotFound) }, HttpStatusCode.NotFound);
                 }
 
-                string categorySearch = categories.Categories.FirstOrDefault(c => c.Equals(CategoryName));
+                string categorySearch = categories.Categories.FirstOrDefault(c => c.Equals(CategoryName.Trim()));
                 if (!categorySearch.HasValue())
                 {
                     return OnError<EntriesResponse>(new EntriesResponse { IsValid = false, Errors = GetErrors($"The {CategoryName} is not exist", HttpStatusCode.NotFound) }, HttpStatusCode.NotFound);
