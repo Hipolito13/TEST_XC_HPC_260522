@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Mappers\" />
+    <Folder Include="Script\" />
     <Folder Include="Repositories\NewFolder\" />
     <Folder Include="Services\" />
   </ItemGroup>
